@@ -13,11 +13,12 @@ def generate_products(num_products=30):
     for i in range(0, num_products):
         adj = random.sample(ADJECTIVES, 1)
         nou = random.sample(NOUNS, 1)
-        name = adj[0] + " " + nou[0]
+        name = f"{adj[0]} {nou[0]}"
         price = random.randint(5, 100)
         weight = random.randint(5, 100)
         flammability = random.uniform(0.0, 2.5)
-        prod_list.append(Product(name, price, weight, flammability))
+        prod = Product(name, price, weight, flammability)
+        prod_list.append(prod)
     return prod_list
 
 

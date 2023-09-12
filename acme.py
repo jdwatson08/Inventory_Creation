@@ -13,7 +13,7 @@ class Product:
         self.price = price
         self.weight = weight
         self.flammability = flammability
-        self.identifier = random.randint(1000000, 9999999)
+        self.identifier = identifier
 
     '''Function determines how stealable a product is based off its weight'''
 
